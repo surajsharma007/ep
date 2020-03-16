@@ -1,0 +1,71 @@
+<html>
+<head>
+    <title>COMODO positive SSL</title>
+    <link type="text/css" rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+  <script>
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+            return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.com/en_US/messenger.Extensions.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'Messenger'));
+    window.extAsyncInit = () => {
+        // TODO: How to parse env file from here?
+        MessengerExtensions.getSupportedFeatures(function success(result) {
+            let features = result.supported_features;
+            if (features.includes("context")) {
+                MessengerExtensions.getContext('660722954392802',
+                    function success(thread_context) {
+                        // success
+                        document.getElementById("psid").value = thread_context.psid;
+                    },
+                    function error(err) {
+                        // error
+                        console.log(err);
+                    }
+                );
+            }
+        }, function error(err) {
+            // error retrieving supported features
+            console.log(err);
+        });
+        document.getElementById('submitButton').addEventListener('click', () => {
+            MessengerExtensions.requestCloseBrowser(function success() {
+                console.log("Webview closing");
+            }, function error(err) {
+                console.log(err);
+            });
+        });
+    };
+</script>
+     <div>
+       <form action="/optionspostback" method="GET">
+        <input type="hidden" name="psid" id="psid">
+        <input type="hidden" name="ssl" value="COMODO positive SSL">
+        <div id='product' class='static-page'>
+          <div class='static-page-body'>
+            <div class='product-body'>
+              <img class="product-image" src="https://mca-cdn.com/sites/default/files/ssl-features.png" />
+              <div class='product-details'>
+                <h1>COMODO POSITIVESSL</h1>
+                       <p>Validation: Domain, Warranty: 2500$
+                     Browser compatibility: 99.3%, Single subdomain
+                            Free Reissues, Free unlimited server licensing</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <input type="submit" value="BUY NOW" id="submitButton" class="see-options">
+       </input>
+      </div>
+    </form>
+</body>
+</body>
+</html>

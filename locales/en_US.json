@@ -1,0 +1,67 @@
+{
+  "profile": {
+    "greeting": "Welcome to Epichost {{user_first_name}}! Click get started to a great automated messaging experience. if there something we should improve feel free to comment with #suggestion "
+  },
+  "menu": {
+    "support": "Customer Support",
+    "help": "Talk to an agent",
+    "suggestion": "Services",
+    "shop": "Shop now",
+    "start_over": "Start over"
+  },
+
+  "get_started": {
+    "welcome": "Hi {{userFirstName}}! Welcome to Epichost,  One stop destination for all web services you need.",
+    "guidance": "At any time, use the menu below to navigate through the options.",
+    "help": "What we can do to help you today?"
+  },
+
+  "curation": {
+    "prompt": "What kind of service you are looking for?",
+    "occasion": "Great! Select from the following.",
+    "domainhosting": "Hosting",
+    "sales": "Talk to sales",
+    "shop": "Shop Now",
+    "register": "Please visit https://www.epichost.in/domain_search/ to register your domain.",
+    "domain": "Domain Registration",
+    "title": "Summer collection 2019",
+    "subtitle": "Featured product",
+    "show": "Another look",
+    "ssl":" SSL Certificates",
+    "infossl" : " Secure socket layers, safer and secure always with https://. Starts at ₹599 per year.",
+    "singled": "Single Domain Hosting",
+    "multid": "Multi Domain Hosting",
+    "windowssd": "Windows Single Domain",
+    "linuxsd": " Linux Single Domain",
+    "windowsr": "Windows Reseller hosting",
+    "linuxrh": " Linux Reseller Hosting",
+    "windowsmd": "Windows Multi Domain",
+    "linuxmd": " Linux Multi Domain",
+    "reseller": "Reseller Hosting",
+    "ssd": "SSD Hosting",
+    "wordpress": "Wordpress Hosting",
+    "websitebuilder": "Website Builder"
+  },
+  "care": {
+    "prompt": "To connect you with the right team please let me know what this is about?",
+    "order": "Order Inquiries",
+    "billing": "Billing Issues",
+    "other": "Support",
+    "issue": "Hi {{userFirstName}}, Please write your query or issue followed by #support,& We will get back to you soon..",
+    "default": "Hi {{userFirstName}}, Please write your query or issue followed by #support, & We will get back to you soon..",
+    "style": "Hi {{userFirstName}}, Please write your query or issue followed by #support, & We will get back to you soon..",
+    "end": "You can also write us at support@epichost.in. ",
+    "help": "Help"
+  },
+  "survey": {
+    "prompt": "Hi, want to get quick feedback on your recent experience.",
+    "positive": "Thanks for the feedback",
+    "neutral": "Thanks for the feedback, if there something we should improve feel free to comment with #suggestion",
+    "negative": "Thanks for telling us. Sorry to hear that, if there something we can do to turn this let us know",
+    "suggestion": "Your suggestion has been recorded for future review by the team. ",
+    "support": "Thank you, We will get back to you soon.. "
+  },
+  "fallback": {
+    "attachment": "Thanks for sending this attachment, we can connect you to an agent to review it or we can start over"
+  }
+}

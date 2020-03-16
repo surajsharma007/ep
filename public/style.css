@@ -1,0 +1,68 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+.see-options {
+  position: fixed;
+  bottom: 25px;
+  z-index: 10;
+  width: 40%;
+  height: 6em;
+  border-radius: 15px;
+  margin: 0;
+  left: 30%;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #0083ff;
+ 
+}
+
+.static-page {
+  display: flex;
+  flex: 0 0 20em;
+  height: 70vh;
+  font-weight: 200;
+}
+
+
+.static-page-subtitle {
+  color: #000000;
+  font-size: 50px;
+}
+
+#product {
+  background-color: #FAFAFA;
+}
+
+#product h1 {
+  color: black;
+  font-size: 50px;
+}
+
+.product-body {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  max-width: 500px;
+  padding: 1rem 1rem 6rem;
+}
+
+.product-details {
+  margin: -2rem 2rem;
+  text-align: left;
+  font-size: 20px;
+  padding: 2px;
+}
+
+.product-image {
+  align-self: flex-start;
+  background: #EAEAEA;
+  height: auto;
+  max-height: 300px;
+  max-width: 300px;
+  min-height: 300px;
+  min-width: 300px;
+  width: 45%;
+}
